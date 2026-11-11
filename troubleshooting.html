@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting | Network Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="brand">
+        <span class="panda">
+            <span class="ear left-ear"></span>
+            <span class="ear right-ear"></span>
+            <span class="panda-face">
+                <span class="eye left-eye"></span>
+                <span class="eye right-eye"></span>
+                <span class="nose"></span>
+            </span>
+        </span>
+        <span>NETWORK DASHBOARD</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="diagnostics.html">Diagnostics</a>
+        <a href="troubleshooting.html" class="active">Troubleshooting</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="page-hero">
+    <p class="eyebrow">NETWORK KNOWLEDGE</p>
+    <h1>Troubleshooting Guide</h1>
+    <p>Learn how to recognize common networking problems and understand the steps used to solve them.</p>
+</section>
+
+<section class="section">
+    <p class="eyebrow">COMMON PROBLEMS</p>
+    <h2>What is going wrong?</h2>
+    <p class="muted">Select a problem to see possible causes and troubleshooting steps.</p>
+
+    <div class="troubleshooting-list">
+
+        <details class="trouble-item">
+            <summary>
+                <span>01</span>
+                <strong>No Internet Connection</strong>
+                <span class="plus">+</span>
+            </summary>
+            <div class="trouble-content">
+                <p><strong>Possible causes:</strong> Router problems, disconnected cables, incorrect network settings, or an internet service outage.</p>
+                <p><strong>What to try:</strong></p>
+                <ol>
+                    <li>Check whether your Wi-Fi is turned on.</li>
+                    <li>Check your router and modem connections.</li>
+                    <li>Restart your router if appropriate.</li>
+                    <li>Check whether other devices can connect.</li>
+                    <li>Contact your internet provider if the issue continues.</li>
+                </ol>
+            </div>
+        </details>
+
+        <details class="trouble-item">
+            <summary>
+                <span>02</span>
+                <strong>Slow Internet Speed</strong>
+                <span class="plus">+</span>
+            </summary>
+            <div class="trouble-content">
+                <p><strong>Possible causes:</strong> Network congestion, weak Wi-Fi signals, background downloads, or outdated equipment.</p>
+                <p><strong>What to try:</strong></p>
+                <ol>
+                    <li>Move closer to your wireless router.</li>
+                    <li>Close applications using a lot of bandwidth.</li>
+                    <li>Restart your network equipment if appropriate.</li>
+                    <li>Run an internet speed test.</li>
+                    <li>Contact your provider if speeds remain unusually slow.</li>
+                </ol>
+            </div>
+        </details>
+
+        <details class="trouble-item">
+            <summary>
+                <span>03</span>
+                <strong>DNS Resolution Problems</strong>
+                <span class="plus">+</span>
+            </summary>
+            <div class="trouble-content">
+                <p><strong>Possible causes:</strong> Incorrect DNS settings, DNS server problems, or cached information.</p>
+                <p><strong>What to try:</strong></p>
+                <ol>
+                    <li>Check that your device has the correct DNS settings.</li>
+                    <li>Try accessing another website.</li>
+                    <li>Use the nslookup command to test DNS resolution.</li>
+                    <li>On Windows, try ipconfig /flushdns.</li>
+                    <li>Contact your network administrator if the issue continues.</li>
+                </ol>
+            </div>
+        </details>
+
+        <details class="trouble-item">
+            <summary>
+                <span>04</span>
+                <strong>IP Address Conflict</strong>
+                <span class="plus">+</span>
+            </summary>
+            <div class="trouble-content">
+                <p><strong>Possible causes:</strong> Two devices using the same IP address or an incorrect manual network configuration.</p>
+                <p><strong>What to try:</strong></p>
+                <ol>
+                    <li>Check the IP address assigned to the device.</li>
+                    <li>Restart the affected device.</li>
+                    <li>Check the DHCP server configuration.</li>
+                    <li>Ask your network administrator to investigate duplicate addresses.</li>
+                </ol>
+            </div>
+        </details>
+
+        <details class="trouble-item">
+            <summary>
+                <span>05</span>
+                <strong>Cannot Connect to a Website</strong>
+                <span class="plus">+</span>
+            </summary>
+            <div class="trouble-content">
+                <p><strong>Possible causes:</strong> DNS issues, browser problems, firewall restrictions, or a website outage.</p>
+                <p><strong>What to try:</strong></p>
+                <ol>
+                    <li>Check whether other websites are working.</li>
+                    <li>Verify the website address.</li>
+                    <li>Try another browser.</li>
+                    <li>Check DNS resolution.</li>
+                    <li>Check whether a firewall or network policy is blocking access.</li>
+                </ol>
+            </div>
+        </details>
+
+    </div>
+</section>
+
+<section class="section">
+    <div class="dark-panel">
+        <p class="eyebrow">NETWORKING BASICS</p>
+        <h2>Learn the tools behind troubleshooting.</h2>
+        <p>Understanding network diagnostics can help you identify problems before choosing a solution.</p>
+        <a href="diagnostics.html" class="button button-light">Explore Diagnostics →</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-brand">NETWORK DASHBOARD</div>
+    <p>A networking and troubleshooting learning project.</p>
+    <span>© 2026 Network Dashboard</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
