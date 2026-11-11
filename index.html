@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="brand">
+        <span class="panda">
+            <span class="ear left-ear"></span>
+            <span class="ear right-ear"></span>
+            <span class="panda-face">
+                <span class="eye left-eye"></span>
+                <span class="eye right-eye"></span>
+                <span class="nose"></span>
+            </span>
+        </span>
+        <span>NETWORK DASHBOARD</span>
+    </a>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="diagnostics.html">Diagnostics</a>
+        <a href="troubleshooting.html">Troubleshooting</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <p class="eyebrow">NETWORK MONITORING & MANAGEMENT</p>
+    <h1>Understand your network.<br>Stay connected.</h1>
+    <p class="hero-description">
+        A simple space to explore network health, monitor connections,
+        and learn how to troubleshoot common networking problems.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="diagnostics.html" class="button button-dark">Explore Diagnostics →</a>
+        <a href="troubleshooting.html" class="button button-outline">Troubleshooting Guide</a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">NETWORK OVERVIEW</p>
+            <h2>Dashboard Overview</h2>
+            <p class="muted">A sample view of important network information.</p>
+        </div>
+        <button class="small-button" onclick="refreshDashboard()">↻ Refresh</button>
+    </div>
+
+    <div class="status-banner">
+        <div>
+            <span class="status-dot"></span>
+            <strong>System Overview</strong>
+            <p>Sample network data is being displayed.</p>
+        </div>
+        <span class="status-label">DEMO MODE</span>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span class="stat-icon">◉</span>
+            <p class="stat-label">Connection Status</p>
+            <h3>Connected</h3>
+            <span class="stat-note">Sample status</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">⌁</span>
+            <p class="stat-label">Network Latency</p>
+            <h3>24 ms</h3>
+            <span class="stat-note">Example measurement</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">⇅</span>
+            <p class="stat-label">Download Speed</p>
+            <h3>85 Mbps</h3>
+            <span class="stat-note">Example measurement</span>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">✓</span>
+            <p class="stat-label">Network Health</p>
+            <h3>98%</h3>
+            <span class="stat-note">Illustrative score</span>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">NETWORK INFORMATION</p>
+            <h2>Connection Details</h2>
+        </div>
+    </div>
+
+    <div class="details-card">
+        <div class="detail-row">
+            <span>Network Type</span>
+            <strong>Wireless (Wi-Fi)</strong>
+        </div>
+        <div class="detail-row">
+            <span>IP Address</span>
+            <strong>192.168.1.105</strong>
+        </div>
+        <div class="detail-row">
+            <span>Default Gateway</span>
+            <strong>192.168.1.1</strong>
+        </div>
+        <div class="detail-row">
+            <span>DNS Server</span>
+            <strong>192.168.1.2</strong>
+        </div>
+        <div class="detail-row">
+            <span>Connection Type</span>
+            <strong>Private Network</strong>
+        </div>
+    </div>
+    <p class="small-note">These are fictional example values, not information collected from your device.</p>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">EXPLORE THE TOOLS</p>
+            <h2>What can you do?</h2>
+        </div>
+    </div>
+
+    <div class="feature-grid">
+        <a href="diagnostics.html" class="feature-card">
+            <span class="feature-icon">⌁</span>
+            <h3>Network Diagnostics</h3>
+            <p>Explore connection checks, latency, and basic network testing.</p>
+            <span class="card-link">Explore diagnostics →</span>
+        </a>
+
+        <a href="troubleshooting.html" class="feature-card">
+            <span class="feature-icon">⚙</span>
+            <h3>Troubleshooting</h3>
+            <p>Learn how to identify and solve common network issues.</p>
+            <span class="card-link">View solutions →</span>
+        </a>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-brand">NETWORK DASHBOARD</div>
+    <p>A networking and troubleshooting learning project.</p>
+    <p>Designed and developed as a personal IT portfolio project.</p>
+    <span>© 2026 Network Dashboard</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
