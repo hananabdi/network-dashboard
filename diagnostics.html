@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Diagnostics | Network Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="brand">
+        <span class="panda">
+            <span class="ear left-ear"></span>
+            <span class="ear right-ear"></span>
+            <span class="panda-face">
+                <span class="eye left-eye"></span>
+                <span class="eye right-eye"></span>
+                <span class="nose"></span>
+            </span>
+        </span>
+        <span>NETWORK DASHBOARD</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="diagnostics.html" class="active">Diagnostics</a>
+        <a href="troubleshooting.html">Troubleshooting</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="page-hero">
+    <p class="eyebrow">NETWORK TOOLS</p>
+    <h1>Network Diagnostics</h1>
+    <p>Explore basic network tests and understand how to identify possible connection problems.</p>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">TEST CENTER</p>
+            <h2>Connection Checks</h2>
+            <p class="muted">Run the demonstration below to explore diagnostic results.</p>
+        </div>
+    </div>
+
+    <div class="diagnostic-panel">
+        <div class="diagnostic-top">
+            <div>
+                <span class="status-dot"></span>
+                <strong>Diagnostic Test Center</strong>
+            </div>
+            <span class="status-label">DEMO MODE</span>
+        </div>
+
+        <p class="muted">
+            Select the button below to run a simulated network diagnostic.
+            This demonstration does not scan your actual network.
+        </p>
+
+        <button class="button button-dark" id="runDiagnostics">
+            Run Diagnostic Test →
+        </button>
+
+        <div id="diagnosticResults" class="results-area" aria-live="polite">
+            <p class="muted">Your test results will appear here.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <p class="eyebrow">UNDERSTANDING NETWORKS</p>
+    <h2>Important Network Tests</h2>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <span class="feature-icon">⌁</span>
+            <h3>Ping</h3>
+            <p>Ping checks whether a device can be reached across a network. It also measures how long a response takes.</p>
+            <span class="tag">Connectivity</span>
+        </div>
+
+        <div class="info-card">
+            <span class="feature-icon">↗</span>
+            <h3>Traceroute</h3>
+            <p>Traceroute shows the path that network traffic takes to reach a destination.</p>
+            <span class="tag">Network Path</span>
+        </div>
+
+        <div class="info-card">
+            <span class="feature-icon">◎</span>
+            <h3>DNS Lookup</h3>
+            <p>DNS translates website names into IP addresses so devices can locate online services.</p>
+            <span class="tag">Name Resolution</span>
+        </div>
+
+        <div class="info-card">
+            <span class="feature-icon">⇅</span>
+            <h3>Latency</h3>
+            <p>Latency measures the time it takes for information to travel across a network.</p>
+            <span class="tag">Performance</span>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="dark-panel">
+        <p class="eyebrow">KEEP LEARNING</p>
+        <h2>Found a network problem?</h2>
+        <p>Visit the troubleshooting guide to learn about common connection issues and possible solutions.</p>
+        <a href="troubleshooting.html" class="button button-light">Open Troubleshooting Guide →</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-brand">NETWORK DASHBOARD</div>
+    <p>A networking and troubleshooting learning project.</p>
+    <span>© 2026 Network Dashboard</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
